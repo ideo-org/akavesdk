@@ -131,6 +131,8 @@ Used in IPC endpoint FileDownloadCreate.
 | `Download` | Using the receipt returned from `CreateFileDownload` endpoint downloads the file by blocks, previously fetches peer block addresses of blocks                                                |
 | `FileDelete` | Hard delete (with all blocks) a specific file by its name and bucket's name.                                                                                                                 |
 
+> **Note on delete behaviour**: "Soft delete" removes the bucket or file metadata from the smart contract but does not immediately purge the underlying data blocks from storage nodes. `FileDelete` performs a hard delete, removing both the metadata and all associated data blocks.
+
 <br>
 
 # Akave CLI
