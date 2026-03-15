@@ -9,9 +9,17 @@ Whether you're building a new integration or managing data across nodes, this SD
 ## Build and test instructions
 Requirements: Go 1.25+
 
-`make build` - outputs a cli binary into `bin/akavecli`.<br>
-`make test` - runs tests.<br>
-Look at `Makefile` for details.
+Run the following from the project root:
+
+```sh
+make build
+```
+This outputs a CLI binary to `bin/akavecli`.
+
+```sh
+make test
+```
+Runs the test suite. See `Makefile` for additional targets.
 
 ### Akave Node IPC API
 
