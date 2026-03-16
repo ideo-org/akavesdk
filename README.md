@@ -215,7 +215,7 @@ Disable erasure coding flag `disable-erasure-coding` ensures that file is not er
 This error occurs when build commands contain inline comments that are copied as part of the command. Copy only the command itself (e.g., `make build`) without any trailing `# comment` text.
 
 ### `connection refused` or `dial tcp ... connect: connection refused`
-The `--node-address` flag must point to a running Akave node. Verify the node is running and reachable at the specified address and port (default: `localhost:5000`).
+The `--node-address` flag must point to a running Akave node. Verify the node is running and reachable at the specified address and port (default: `127.0.0.1:5000`).
 
 ### `invalid private key` or transaction signing errors
 Private keys must be provided as raw hex strings (without `0x` prefix). For example: `--private-key="abc123..."`. Keys exported from MetaMask typically include the `0x` prefix — remove it before use.
