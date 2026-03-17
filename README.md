@@ -6,6 +6,25 @@ Whether you're building a new integration or managing data across nodes, this SD
 
 ```Base commit: tag v0.4.4```.
 
+## Install
+
+The quickest way to install `akavecli` — no Go toolchain required:
+
+```sh
+curl -sSL https://raw.githubusercontent.com/akave-ai/akavesdk/main/install.sh | bash
+```
+
+Or with [eget](https://github.com/zyedidia/eget):
+
+```sh
+eget akave-ai/akavesdk --asset akavecli
+```
+
+Pre-built binaries for Linux, macOS (Intel + Apple Silicon), and Windows are available on the [Releases page](https://github.com/akave-ai/akavesdk/releases/latest).
+
+> **Manual install**: Download the binary for your platform from the Releases page, rename it to `akavecli`, and move it to a directory in your `$PATH` (e.g. `/usr/local/bin`).
+
+
 ## Build and test instructions
 Requirements: Go 1.25+
 
