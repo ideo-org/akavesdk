@@ -75,7 +75,7 @@ install_akavecli() {
     echo "Downloading ${BINARY_NAME} ${version} (${OS}/${ARCH})..."
 
     if [ "$HTTP_CLI" = "curl" ]; then
-        curl -sSL -o "$tmp" "$url" || { echo "Download failed: $url" >&2; rm -f "$tmp"; exit 1; }
+        curl -fsSL -o "$tmp" "$url" || { echo "Download failed: $url" >&2; rm -f "$tmp"; exit 1; }
     else
         wget -q -O "$tmp" "$url" || { echo "Download failed: $url" >&2; rm -f "$tmp"; exit 1; }
     fi

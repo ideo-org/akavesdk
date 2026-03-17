@@ -22,7 +22,7 @@ eget akave-ai/akavesdk --asset akavecli
 
 Pre-built binaries for Linux, macOS (Intel + Apple Silicon), and Windows are available on the [Releases page](https://github.com/akave-ai/akavesdk/releases/latest).
 
-> **Manual install**: Download the binary for your platform from the Releases page. On Linux/macOS, rename it to `akavecli` and move it to a directory in your `$PATH` (e.g. `/usr/local/bin`). On Windows, keep the filename as `akavecli.exe` and place it in a directory on your `PATH`.
+> **Manual install**: Download the binary for your platform from the Releases page. On Linux/macOS, rename it to `akavecli`, make it executable (`chmod +x akavecli`), and move it to a directory in your `$PATH` (e.g. `/usr/local/bin`). On Windows, extract the `.zip` archive and add the directory containing `akavecli.exe` to your system PATH.
 
 
 ## Build and test instructions

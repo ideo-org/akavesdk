@@ -28,7 +28,7 @@ archives:
   - id: default
     format: binary
     name_template: >-
-      {{ .ProjectName }}-
+      akavecli-
       {{- .Os }}-
       {{- if eq .Arch "amd64" }}amd64
       {{- else if eq .Arch "arm64" }}arm64
